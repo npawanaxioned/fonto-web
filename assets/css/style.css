@@ -8,13 +8,87 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,22 +98,35 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
-input[type='button'],
-input[type='submit'],
+input[type="button"],
+input[type="submit"],
 button {
   cursor: pointer;
 }
@@ -50,7 +137,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   width: 100%;
@@ -66,8 +155,12 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -0.7em;
+}
+sub {
+  bottom: -0.25em;
+}
 
 /* 1.2. Clear Fix
    ========================== */
@@ -78,8 +171,12 @@ sub { bottom: -.25em; }
   content: " ";
 }
 
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
 
 /*for all*/
 body {
@@ -87,9 +184,9 @@ body {
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 li {
@@ -100,38 +197,38 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 86%;
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
-header{
+header {
   height: 606px;
   background: url("https://dummyimage.com/1350x606/000000/5a5a66");
   background-size: cover;
-  color: #EBEBEB;
+  color: #ebebeb;
 }
 
-header .wrapper{
+header .wrapper {
   padding: 31px 0;
   border-bottom: 1px solid #fff;
   display: flex;
   justify-content: space-between;
 }
 
-.logo{
+.logo {
   font-size: 37px;
 }
 
-.header-nav > ul{
+.header-nav > ul {
   display: flex;
   align-items: center;
   gap: 42px;
 }
 
-.header-nav a{
-  color: #ECECEC;
+.header-nav a {
+  color: #ececec;
 }
 
 .dropdown-nav {
@@ -140,22 +237,22 @@ header .wrapper{
   gap: 13px;
 }
 
-.dropdown-container a{
+.dropdown-container a {
   text-indent: -9999px;
 }
-.dropdown-container a::before{
+.dropdown-container a::before {
   color: #fff;
   font-family: "FontAwesome";
   float: left;
   text-indent: 0;
 }
 
-.dropdown::before{
+.dropdown::before {
   content: "\f107";
   font-size: 8px;
 }
 
-.cart-search{
+.cart-search {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -183,7 +280,7 @@ header .wrapper{
 
 /*=================================
   Header styling ends here
-=================================*/  
+=================================*/
 
 /*=================================
   main styling starts here
@@ -192,67 +289,69 @@ header .wrapper{
 /*=================================
   Fresh New Designs section styling starts here
 =================================*/
-.fresh-new-designs-container{
+.fresh-new-designs-container {
   padding: 88px 0 175px;
-  background-color: #A6B4BB;
+  background-color: #a6b4bb;
   text-align: center;
 }
 
-.heading-two{
-  color: #1F1F1F;
+.heading-two {
+  color: #1f1f1f;
   font-size: 39px;
 }
 
-.img-container{
+.img-container {
   margin-top: 80px;
   display: flex;
   gap: 40px;
 }
 
-.img-container-col-1 > ul, .img-container-col-2 > ul{
+.img-container-col-1 > ul,
+.img-container-col-2 > ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.img-container-col-1 img, .img-container-col-2 img{
+.img-container-col-1 img,
+.img-container-col-2 img {
   border: 10px solid #fff;
-  box-shadow: 6px 4px #95A1A8;
+  box-shadow: 6px 4px #95a1a8;
 }
 /*=================================
   Fresh New Designs section styling ends here
 =================================*/
 
 /*=================================
-  Reviews Section start section styling starts here
+  Reviews Section styling starts here
 =================================*/
-.reviews-container{
+.reviews-container {
   padding: 38px 0;
-  background-color: #1F1F1F;
-  color: #EBEAE6;
+  background-color: #1f1f1f;
+  color: #ebeae6;
 }
 
-.reviews-container-top{
+.reviews-container-top {
   display: flex;
   gap: 70px;
 }
 
-.icon-container a{
+.icon-container a {
   text-indent: -9999px;
 }
-.icon-container a::before{
+.icon-container a::before {
   color: #000;
   font-family: "FontAwesome";
   float: left;
   text-indent: 0;
 }
 
-.double-quotes::before{
+.double-quotes::before {
   content: "\f10e";
   font-size: 66px;
 }
 
-.reviewer-details{
+.reviewer-details {
   margin-top: 14px;
   display: flex;
   align-items: center;
@@ -261,15 +360,15 @@ header .wrapper{
   justify-content: center;
 }
 
-.profile-pic{
+.profile-pic {
   border-radius: 50%;
 }
 
-.profile-email{
-  color: #BD4C36;
+.profile-email {
+  color: #bd4c36;
 }
 
-.reviews-container-bottom{
+.reviews-container-bottom {
   display: flex;
   gap: 362px;
 }
@@ -279,114 +378,156 @@ header .wrapper{
   gap: 10px;
 }
 
-.left-right-icons a{
+.left-right-icons a {
   text-indent: -9999px;
   padding: 10px;
-  border: 1px solid #BD4C36;
+  border: 1px solid #bd4c36;
 }
 
-.left-right-icons a::before{
-  color: #BD4C36;
+.left-right-icons a::before {
+  color: #bd4c36;
   font-family: "FontAwesome";
   float: left;
   text-indent: 0;
 }
 
-.left::before{
+.left::before {
   content: "\f100";
   font-size: 10px;
 }
 
-.right::before{
+.right::before {
   content: "\f101";
   font-size: 10px;
 }
 
-.slider-container{
+.slider-container {
   display: flex;
   gap: 10px;
 }
 
-.slider-container a{
+.slider-container a {
   text-indent: -9999px;
-  border: 1px solid #BD4C36;
+  border: 1px solid #bd4c36;
   border-radius: 50%;
 }
 
-.slider-container a::before{
-  color: #1F1F1F;
+.slider-container a::before {
+  color: #1f1f1f;
   font-family: "FontAwesome";
   float: left;
   text-indent: 0;
 }
 
-.slider::before{
+.slider::before {
   content: "\f111";
   font-size: 10px;
 }
 
-.active{
-  background-color: #BD4C36;
-  color: #BD4C36;
+.active {
+  background-color: #bd4c36;
+  color: #bd4c36;
 }
 /*=================================
-  Reviews Section start section styling ends here
+  Reviews section styling ends here
 =================================*/
 
 /*=================================
-  author Section start section styling ends here
+  author section styling ends here
 =================================*/
-.authors-container{
+.authors-container {
   padding: 110px 0;
-  background-color: #A6B4BB;
+  background-color: #a6b4bb;
   text-align: center;
 }
 
-.authors-description{
+.authors-description {
   margin-top: 90px;
   display: flex;
   gap: 55px;
 }
 
-.authors-description img{
+.authors-description img {
   border-radius: 50%;
 }
 
-.author{
+.author {
   margin-top: 15px;
-  color: #56515B;
+  color: #56515b;
 }
 
-.designation{
+.designation {
   margin-top: 10px;
-  color: #E2E4DD;
+  color: #e2e4dd;
 }
 /*=================================
-  author Section ends section styling ends here
+  author section styling ends here
 =================================*/
 
+/*=================================
+  design section styling starts here
+=================================*/
+.designs-container {
+  padding: 42px 0 156px;
+  background-color: #a6b4bb;
+  text-align: center;
+}
+
+.card-container {
+  margin-top: 120px;
+  display: flex;
+  gap: 35px;
+}
+
+.product-name {
+  margin-top: 28px;
+}
+
+.product-price {
+  margin-top: 22px;
+  color: #eb7b7b;
+}
+
+.product-price a {
+  text-indent: -9999px;
+}
+
+.product-price a::before {
+  color: #eb7b7b;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.euro::before {
+  content: "\f153";
+  font-size: 13px;
+}
+
+.out-of-stock {
+  margin-top: 22px;
+  text-transform: uppercase;
+}
+
+.sale {
+  text-decoration: line-through;
+}
+/*=================================
+  design section styling ends here
+=================================*/
 /*=================================
   main styling ends here
 =================================*/
 
 /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
 
-
-
-
-
-
-
- /*=================================
+/*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
 
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-
-
-
-}  
+}
