@@ -106,11 +106,80 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header{
+  height: 606px;
+  background: url("https://dummyimage.com/1350x606/000000/5a5a66");
+  background-size: cover;
+  color: #EBEBEB;
+}
 
+header .wrapper{
+  padding: 31px 0;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+}
 
+.logo{
+  font-size: 37px;
+}
 
+.header-nav > ul{
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
 
+.header-nav a{
+  color: #ECECEC;
+}
 
+.dropdown-nav {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.dropdown-container a{
+  text-indent: -9999px;
+}
+.dropdown-container a::before{
+  color: #fff;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.dropdown::before{
+  content: "\f107";
+  font-size: 8px;
+}
+
+.cart-search{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cart-search a {
+  text-indent: -9999px;
+}
+.cart-search a::before {
+  color: #fff;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.shop::before {
+  content: "\f290";
+  font-size: 32px;
+}
+
+.search::before {
+  content: "\f002";
+  font-size: 16px;
+}
 
 /*=================================
   Header styling ends here
@@ -120,12 +189,181 @@ li {
   main styling starts here
 =================================*/
 
+/*=================================
+  Fresh New Designs section styling starts here
+=================================*/
+.fresh-new-designs-container{
+  padding: 88px 0 175px;
+  background-color: #A6B4BB;
+  text-align: center;
+}
 
+.heading-two{
+  color: #1F1F1F;
+  font-size: 39px;
+}
 
+.img-container{
+  margin-top: 80px;
+  display: flex;
+  gap: 40px;
+}
 
+.img-container-col-1 > ul, .img-container-col-2 > ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.img-container-col-1 img, .img-container-col-2 img{
+  border: 10px solid #fff;
+  box-shadow: 6px 4px #95A1A8;
+}
+/*=================================
+  Fresh New Designs section styling ends here
+=================================*/
 
+/*=================================
+  Reviews Section start section styling starts here
+=================================*/
+.reviews-container{
+  padding: 38px 0;
+  background-color: #1F1F1F;
+  color: #EBEAE6;
+}
 
+.reviews-container-top{
+  display: flex;
+  gap: 70px;
+}
+
+.icon-container a{
+  text-indent: -9999px;
+}
+.icon-container a::before{
+  color: #000;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.double-quotes::before{
+  content: "\f10e";
+  font-size: 66px;
+}
+
+.reviewer-details{
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+}
+
+.profile-pic{
+  border-radius: 50%;
+}
+
+.profile-email{
+  color: #BD4C36;
+}
+
+.reviews-container-bottom{
+  display: flex;
+  gap: 362px;
+}
+
+.left-right-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.left-right-icons a{
+  text-indent: -9999px;
+  padding: 10px;
+  border: 1px solid #BD4C36;
+}
+
+.left-right-icons a::before{
+  color: #BD4C36;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.left::before{
+  content: "\f100";
+  font-size: 10px;
+}
+
+.right::before{
+  content: "\f101";
+  font-size: 10px;
+}
+
+.slider-container{
+  display: flex;
+  gap: 10px;
+}
+
+.slider-container a{
+  text-indent: -9999px;
+  border: 1px solid #BD4C36;
+  border-radius: 50%;
+}
+
+.slider-container a::before{
+  color: #1F1F1F;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.slider::before{
+  content: "\f111";
+  font-size: 10px;
+}
+
+.active{
+  background-color: #BD4C36;
+  color: #BD4C36;
+}
+/*=================================
+  Reviews Section start section styling ends here
+=================================*/
+
+/*=================================
+  author Section start section styling ends here
+=================================*/
+.authors-container{
+  padding: 110px 0;
+  background-color: #A6B4BB;
+  text-align: center;
+}
+
+.authors-description{
+  margin-top: 90px;
+  display: flex;
+  gap: 55px;
+}
+
+.authors-description img{
+  border-radius: 50%;
+}
+
+.author{
+  margin-top: 15px;
+  color: #56515B;
+}
+
+.designation{
+  margin-top: 10px;
+  color: #E2E4DD;
+}
+/*=================================
+  author Section ends section styling ends here
+=================================*/
 
 /*=================================
   main styling ends here

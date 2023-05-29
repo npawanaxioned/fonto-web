@@ -13,8 +13,7 @@
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="favicon.ico">
   <!--font-awesome link for icons-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css">
 </head>
@@ -25,40 +24,47 @@
     <!--header section start-->
     <header>
       <div class="wrapper">
-        <h1>Fonto</h1>
-        <nav>
+        <h1 class="logo">Fonto</h1>
+        <nav class="header-nav">
           <ul>
-            <li><a href="#FIXME" title="Portfolio" target="_self">Portfolio</a></li>
-            <li><a href="#FIXME" title="Blog" target="_self">Blog</a></li>
+            <li class="dropdown-nav">
+              <a href="#FIXME" title="Portfolio" target="_self">
+                Portfolio
+                <ul class="dropdown-container">
+                  <li><a href="#FIXME" class="dropdown">dropdown</a></li>
+                </ul>
+              </a>
+            </li>
+            <li class="dropdown-nav">
+              <a href="#FIXME" title="Blog" target="_self">
+                <span>Blog</span> 
+                <ul class="dropdown-container">
+                  <li><a href="#FIXME" class="dropdown">dropdown</a></li>
+                </ul>
+              </a>
+            </li>
             <li><a href="#FIXME" title="Elements" target="_self">Elements</a></li>
             <li><a href="#FIXME" title="Shortcodes" target="_self">Shortcodes</a></li>
-            <li><a href="#FIXME" title="Shop" target="_self">Shop</a></li>
+            <li class="dropdown-nav"><a href="#FIXME" title="Shop" target="_self">
+                Shop
+                <ul class="dropdown-container">
+                  <li><a href="#FIXME" class="dropdown">dropdown</a></li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <ul class="cart-search">
+                <!-- shopping cart start -->
+                <li><a href="#FIXME" class="shop">Shop</a></li>
+                <!-- shopping cart end -->
+
+                <!-- search icon start -->
+                <li><a href="#FIXME" class="search">Search</a></li>
+                <!-- search icon end -->
+              </ul>
+            </li>
           </ul>
         </nav>
-        <ul>
-          <!-- shopping cart start -->
-          <li>
-            <figure>
-              <img src="#" alt="shopping-cart">
-            </figure>
-          </li>
-          <!-- shopping cart end -->
-
-          <!-- search icon start -->
-          <li>
-            <figure>
-              <img src="#" alt="search">
-            </figure>
-
-            <!-- search input start -->
-            <div class="search-input">
-              <input type="search" name="search" id="input-search">
-            </div>
-            <!-- search input end -->
-
-          </li>
-          <!-- search icon end -->
-        </ul>
       </div>
     </header>
     <!--header section start-->
@@ -68,22 +74,21 @@
       <!-- Fresh New Designs start -->
       <section class="fresh-new-designs-container">
         <div class="wrapper">
-          <h2>Fresh New Designs</h2>
+          <h2 class="heading-two">Fresh New Designs</h2>
           <ul class="img-container">
-            <li>
-              <figure><img src="#" alt="zdravo-beograd"></figure>
+            <li class="img-container-col-1">
+              <ul>
+                <li><figure><img src="https://dummyimage.com/600x495/000/fff" alt="zdravo-beograd"></figure></li>
+                <li><figure><img src="https://dummyimage.com/600x372/000/fff" alt="pc-setup"></figure></li>
+                <li><figure><img src="https://dummyimage.com/600x382/000/fff" alt="see-ict"></figure></li>
+              </ul>
             </li>
-            <li>
-              <figure><img src="#" alt="hale-bottles"></figure>
-            </li>
-            <li>
-              <figure><img src="#" alt="pc-setup"></figure>
-            </li>
-            <li>
-              <figure><img src="#" alt="visiting-cards"></figure>
-            </li>
-            <li>
-              <figure><img src="#" alt="see-ict"></figure>
+
+            <li class="img-container-col-2">
+              <ul>
+                <li><figure><img src="https://dummyimage.com/600x848/000/fff" alt="hale-bottles"></figure></li>
+                <li><figure><img src="https://dummyimage.com/600x580/000/fff" alt="visiting-cards"></figure></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -94,54 +99,32 @@
       <div class="reviews-container">
         <div class="wrapper">
           <div class="reviews-container-top">
-            <figure>
-              <img src="#" alt="double-quotes">
-            </figure>
+            <ul class="icon-container">
+              <li><a href="#FIXME" class="double-quotes"></a></li>
+            </ul>
             <p>I ordered 3 posters the first time and they arrived quickly and in great condition. A second order for
               two more posters about 1-2 weeks later was added.</p>
             <figure>
-              <img src="#" alt="profile-pic">
-              <figcaption>
-                <p>Loa44</p>
-                <p><a href="#FIXME" title="Email address" target="_blank" rel="noopener"></a></p>
+              <img class="profile-pic" src="https://dummyimage.com/100x100/000/fff" alt="profile-pic">
+              <figcaption class="reviewer-details">
+                <p class="profile-name">Loa44</p>
+                <p><a class="profile-email" href="#FIXME" title="Email address" target="_blank" rel="noopener">pukkathemes.com</a></p>
               </figcaption>
             </figure>
           </div>
 
           <div class="reviews-container-bottom">
-            <figure><img src="#" alt="left"></figure>
-            <figure><img src="#" alt="right"></figure>
+            <ul class="left-right-icons">
+              <li><a href="#FIXME" class="left"></a></li>
+              <li><a href="#FIXME" class="right"></a></li>
+            </ul>
 
             <ul class="slider-container">
-              <li>
-                <svg width="20" height="20">
-                  <circle cx="10" cy="10" r="5" stroke="red" stroke-width="1" />
-                </svg>
-              </li>
-
-              <li>
-                <svg width="20" height="20">
-                  <circle cx="10" cy="10" r="5" stroke="red" stroke-width="1" />
-                </svg>
-              </li>
-
-              <li>
-                <svg width="20" height="20">
-                  <circle cx="10" cy="10" r="5" fill="red" />
-                </svg>
-              </li>
-
-              <li>
-                <svg width="20" height="20">
-                  <circle cx="10" cy="10" r="5" stroke="red" stroke-width="1" />
-                </svg>
-              </li>
-
-              <li>
-                <svg width="20" height="20">
-                  <circle cx="10" cy="10" r="5" stroke="red" stroke-width="1" />
-                </svg>
-              </li>
+              <li><a href="#FIXME" class="slider"></a></li>
+              <li><a href="#FIXME" class="slider"></a></li>
+              <li><a href="#FIXME" class="slider active"></a></li>
+              <li><a href="#FIXME" class="slider"></a></li>
+              <li><a href="#FIXME" class="slider"></a></li>
             </ul>
           </div>
 
@@ -152,54 +135,54 @@
       <!-- Authors Section start -->
       <section class="authors-container">
         <div class="wrapper">
-          <h2>Meet Our Authors</h2>
+          <h2 class="heading-two">Meet Our Authors</h2>
           <ul class="authors-description">
             <li>
               <figure>
-                <img src="#" alt="Author Pic">
-                <figcaption>Dimitar Vuksanov</figcaption>
+                <img src="https://dummyimage.com/160x160/000/fff" alt="Author Pic">
+                <figcaption class="author">Dimitar Vuksanov</figcaption>
               </figure>
-              <p>Designer</p>
+              <p class="designation">Designer</p>
             </li>
 
             <li>
               <figure>
-                <img src="#" alt="Author Pic">
-                <figcaption>Johanna Smith</figcaption>
+                <img src="https://dummyimage.com/160x160/000/fff" alt="Author Pic">
+                <figcaption class="author">Johanna Smith</figcaption>
               </figure>
-              <p>Photgrapher</p>
+              <p class="designation">Photgrapher</p>
             </li>
 
             <li>
               <figure>
-                <img src="#" alt="Author Pic">
-                <figcaption>Johnny Uber</figcaption>
+                <img src="https://dummyimage.com/160x160/000/fff" alt="Author Pic">
+                <figcaption class="author">Johnny Uber</figcaption>
               </figure>
-              <p>Rapper</p>
+              <p class="designation">Rapper</p>
             </li>
 
             <li>
               <figure>
-                <img src="#" alt="Author Pic">
-                <figcaption>Katty Perry</figcaption>
+                <img src="https://dummyimage.com/160x160/000/fff" alt="Author Pic">
+                <figcaption class="author">Katty Perry</figcaption>
               </figure>
-              <p>Singer</p>
+              <p class="designation">Singer</p>
             </li>
 
             <li>
               <figure>
-                <img src="#" alt="Author Pic">
-                <figcaption>Vladimir Trkulja</figcaption>
+                <img src="https://dummyimage.com/160x160/000/fff" alt="Author Pic">
+                <figcaption class="author">Vladimir Trkulja</figcaption>
               </figure>
-              <p>CEO</p>
+              <p class="designation">CEO</p>
             </li>
 
             <li>
               <figure>
-                <img src="#" alt="Author Pic">
-                <figcaption>Pukka Author</figcaption>
+                <img src="https://dummyimage.com/160x160/000/fff" alt="Author Pic">
+                <figcaption class="author">Pukka Author</figcaption>
               </figure>
-              <p>Writter</p>
+              <p class="designation">Writter</p>
             </li>
           </ul>
         </div>
