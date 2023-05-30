@@ -197,7 +197,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%;
+  width: 92.5%;
   margin: 0 auto;
 }
 /*=================================
@@ -221,6 +221,11 @@ header .wrapper {
   font-size: 37px;
 }
 
+.logo:hover{
+  color: #bd4c36;
+  cursor: pointer;
+}
+
 .header-nav > ul {
   display: flex;
   align-items: center;
@@ -228,20 +233,21 @@ header .wrapper {
 }
 
 .header-nav a {
-  color: #ececec;
+  color: #E9E9E9;
+  font-weight: 600;
 }
 
-.dropdown-nav {
+.dropdown-container {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 27%;
 }
 
-.dropdown-container a {
+.dropdown-container span {
   text-indent: -9999px;
 }
-.dropdown-container a::before {
-  color: #fff;
+.dropdown-container span::before {
+  color: #E9E9E9;
   font-family: "FontAwesome";
   float: left;
   text-indent: 0;
@@ -278,6 +284,10 @@ header .wrapper {
   font-size: 16px;
 }
 
+.header-nav a:hover, .dropdown-container span:hover::before, .cart-search a:hover::before{
+  color: #bd4c36;
+}
+
 /*=================================
   Header styling ends here
 =================================*/
@@ -303,7 +313,7 @@ header .wrapper {
 .img-container {
   margin-top: 80px;
   display: flex;
-  gap: 40px;
+  gap: 3.21%;
 }
 
 .img-container-col-1 > ul,
@@ -333,7 +343,7 @@ header .wrapper {
 
 .reviews-container-top {
   display: flex;
-  gap: 70px;
+  gap: 5.75%;
 }
 
 .icon-container a {
@@ -349,6 +359,10 @@ header .wrapper {
 .double-quotes::before {
   content: "\f10e";
   font-size: 66px;
+}
+
+.review-detail{
+  font-size: 32px;
 }
 
 .reviewer-details {
@@ -368,9 +382,14 @@ header .wrapper {
   color: #bd4c36;
 }
 
+.profile-email:hover{
+  color: #fff;
+}
+
 .reviews-container-bottom {
+  padding-left: 10.5%;
   display: flex;
-  gap: 362px;
+  gap: 29%;
 }
 
 .left-right-icons {
@@ -401,6 +420,10 @@ header .wrapper {
   font-size: 10px;
 }
 
+.left-right-icons a:hover::before{
+  color: #fff;
+}
+
 .slider-container {
   display: flex;
   gap: 10px;
@@ -424,10 +447,18 @@ header .wrapper {
   font-size: 10px;
 }
 
-.active {
-  background-color: #bd4c36;
+/* .slider-container a:hover::before{
+  border: 1px solid #fff;
+  border-radius: 50%;
+} */
+
+.active a::before{
   color: #bd4c36;
 }
+
+/* .slider-container a::before .active::before  {
+  color: #fff;
+} */
 /*=================================
   Reviews section styling ends here
 =================================*/
@@ -444,7 +475,7 @@ header .wrapper {
 .authors-description {
   margin-top: 90px;
   display: flex;
-  gap: 55px;
+  gap: 4.5%;
 }
 
 .authors-description img {
@@ -468,7 +499,7 @@ header .wrapper {
   design section styling starts here
 =================================*/
 .designs-container {
-  padding: 42px 0 156px;
+  padding: 42px 0 144px;
   background-color: #a6b4bb;
   text-align: center;
 }
@@ -476,11 +507,33 @@ header .wrapper {
 .card-container {
   margin-top: 120px;
   display: flex;
-  gap: 35px;
+  gap: 2.75%;
+}
+
+.card-container > li{
+  box-shadow: 8px 7px #95A1A8;
+}
+
+.sale-container{
+  display: flex;
+  gap: 5px;
+}
+
+.sale > li {
+  color: #789EB6;
+  text-decoration: line-through;
+}
+
+.product-details{
+  padding: 28px 0 35px 16px;  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #EBEBEB;
 }
 
 .product-name {
-  margin-top: 28px;
+  font-weight: 600;
 }
 
 .product-price {
@@ -509,8 +562,37 @@ header .wrapper {
   text-transform: uppercase;
 }
 
-.sale {
-  text-decoration: line-through;
+.stock-card, .sale-card{
+  position: relative;
+}
+
+.stock-badge, .sale-badge{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.stock-badge{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -8%;
+  top: -5%;
+  background-color: #5F8CA9;
+}
+
+.sale-badge{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -8%;
+  top: -5%;
+  background-color: #EB7777;
 }
 /*=================================
   design section styling ends here
@@ -522,7 +604,105 @@ header .wrapper {
 /*=================================
   footer styling starts here
 =================================*/
+footer{
+  padding-top: 68px;
+  background-color: #1f1f1f;
+  color: #E3EAEB;
+}
 
+.footer-top{
+  display: flex;
+  gap: 22%;
+}
+
+.heading-four{
+  min-width: max-content;
+  color: #EBEBEB;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about-details, .sponsors-img-container{
+  margin-top: 27px;
+}
+
+.about-details{
+  min-width: 26%;
+}
+
+.sponsors-img-container > img{
+  width: 250px;
+  height: 250px;
+  border: 1px solid #fff;
+  border-top: none;
+}
+
+.footer-bottom{
+  margin-top: 123px;
+  padding: 4px 3.75%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+.social-links{
+  display: flex;
+  gap: 35%;
+}
+
+.social-links a {
+  text-indent: -9999px;
+}
+
+.social-links a::before {
+  color: #A6B4BB;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.facebook::before {
+  content: "\f39e";
+  font-size: 17px;
+}
+
+.twitter::before {
+  content: "\f099";
+  font-size: 17px;
+}
+
+.vimeo::before {
+  content: "\f40a";
+  font-size: 17px;
+}
+
+.instagram::before {
+  content: "\f16d";
+  font-size: 17px;
+}
+
+.social-links a:hover::before{
+  color: #fff;
+}
+
+.privacy-terms-container a{
+  color: #677B75;
+  font-size: 12px;
+}
+
+.privacy{
+  padding: 0 8px;
+}
+
+.terms{
+  padding: 0 8px;
+  border-left: 1px solid #fff;
+}
+
+.privacy:hover, .terms:hover{
+  color: #fff;
+}
 /*=================================
   footer styling ends here
 =================================*/
@@ -530,4 +710,5 @@ header .wrapper {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+
 }
