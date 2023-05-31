@@ -217,13 +217,13 @@ header .wrapper {
   justify-content: space-between;
 }
 
-.logo {
+.logo > a{
+  color: #fff;
   font-size: 37px;
 }
 
-.logo:hover{
+.logo > a:hover{
   color: #bd4c36;
-  cursor: pointer;
 }
 
 .header-nav > ul {
@@ -237,16 +237,14 @@ header .wrapper {
   font-weight: 600;
 }
 
-.dropdown-container {
+.dropdown-container{
   display: flex;
-  align-items: center;
-  gap: 27%;
 }
 
-.dropdown-container span {
+.submenu a {
   text-indent: -9999px;
 }
-.dropdown-container span::before {
+.submenu a::before {
   color: #E9E9E9;
   font-family: "FontAwesome";
   float: left;
@@ -255,7 +253,12 @@ header .wrapper {
 
 .dropdown::before {
   content: "\f107";
+  padding-left: 10px;
   font-size: 8px;
+}
+
+.dropdown-container a:hover::before{
+  color: #bd4c36;
 }
 
 .cart-search {
