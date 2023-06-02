@@ -237,14 +237,11 @@ header .wrapper {
   font-weight: 600;
 }
 
-.dropdown-container{
+.dropdown-container a{
   display: flex;
+  align-items: center;
 }
-
-.submenu a {
-  text-indent: -9999px;
-}
-.submenu a::before {
+.dropdown-container a::before{
   color: #E9E9E9;
   font-family: "FontAwesome";
   float: left;
@@ -253,7 +250,7 @@ header .wrapper {
 
 .dropdown::before {
   content: "\f107";
-  padding-left: 10px;
+  padding-right: 10px;
   font-size: 8px;
 }
 
@@ -613,7 +610,7 @@ footer{
   color: #E3EAEB;
 }
 
-.footer-top{
+.footer-top ul{
   display: flex;
   gap: 22%;
 }
