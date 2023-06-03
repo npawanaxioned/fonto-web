@@ -204,7 +204,7 @@ li {
   Header styling starts here
 =================================*/
 header {
-  height: 606px;
+  padding-bottom: 606px;
   background: url("https://dummyimage.com/1350x606/000000/5a5a66");
   background-size: cover;
   color: #ebebeb;
@@ -632,7 +632,6 @@ footer {
 
 .sponsors-img-container > img {
   width: 250px;
-  height: 250px;
   border: 1px solid #fff;
   border-top: none;
 }
